@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--include "head.inc"-->
+    <script src="editor/kindeditor-all.js"></script>
+    <script src="js/article.js"></script>
+</head>
+
+<body>
+    <div id="app" class="cms-article-app">
+        <div class="header">
+            <div class="title">
+                <h1>文案编辑</h1>
+                <h2></h2>
+            </div>
+            <div class="operate">
+                <div class="cms-back btn">
+                    <i class="iconfont">&#xe632;</i>
+                    <span>返回</span>
+                </div>
+                <div class="cms-save btn">
+                    <i class="iconfont">&#xe692;</i>
+                    <span>保存信息</span>
+                </div>
+                <div class="cms-release btn">
+                    <i class="iconfont">&#xe626;</i>
+                    <span>保存并发布</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="line">
+                <div class="caption">所属栏目</div>
+                <div class="box columns">
+                    <span class="column-name-text">${column_name}</span>
+                    <input type="hidden" class="column-id" value="${column_id}" />
+                    <input type="hidden" class="column-name" value="${column_name}" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">标识</div>
+                <div class="box">
+                    <input type="text" class="id" value="${id}" placeholder="系统自动生成" readonly/>
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">标题</div>
+                <div class="box">
+                    <input type="text" class="title" value="${title}" placeholder="填写文案标题 -必填" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">副标题</div>
+                <div class="box">
+                    <input type="text" class="sub_title" value="${sub_title}" placeholder="填写文案副标题" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">作者</div>
+                <div class="box">
+                    <input type="text" class="author" value="${author}" placeholder="填写文案作者" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">外部链接</div>
+                <div class="box">
+                    <input type="text" class="link" value="${link}" placeholder="填写外部链接地址" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">关键字</div>
+                <div class="box">
+                    <input type="text" class="keyword" value="${keyword}" placeholder="填写文案关键字" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">描述</div>
+                <div class="box">
+                    <textarea class="description" placeholder="填写文案描述" rows="5">${description}</textarea>
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">图片</div>
+                <div class="upload banner"></div>
+                <input type="hidden" class="img" value="${banner}" />
+            </div>
+            <div class="line">
+                <div class="caption">文章内容</div>
+                <div class="content">
+                    <textarea name="content">${content}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

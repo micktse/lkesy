@@ -1,0 +1,25 @@
+{
+  "name": "nodecms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "supervisor node index.js",
+    "debug": "node --inspect-brk index.js",
+    "test": "supervisor node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@code.aliyun.com:mickfoely/nodecms"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "node-uuid": "^1.4.8"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "supervisor": "^0.12.0"
+  }
+}

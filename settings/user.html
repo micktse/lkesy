@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--include "head.inc"-->
+    <script src="js/user.js"></script>
+</head>
+
+<body>
+    <div id="app" class="cms-user-app">
+        <div class="header">
+            <div class="title">
+                <h1>用户编辑</h1>
+                <h2>${name}</h2>
+            </div>
+            <div class="operate">
+                <div class="cms-back btn">
+                    <i class="iconfont">&#xe632;</i>
+                    <span>返回</span>
+                </div>
+                <div class="cms-save btn">
+                    <i class="iconfont">&#xe692;</i>
+                    <span>保存信息</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <input type="hidden" class="id" value="${id}" />
+            <div class="line">
+                <div class="caption">账号</div>
+                <div class="box">
+                    <input type="text" class="account" value="${account}" placeholder="填写用户账号 -必填" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">姓名</div>
+                <div class="box">
+                    <input type="text" class="name" value="${name}" placeholder="填写用户姓名 -必填" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">电话号码</div>
+                <div class="box">
+                    <input type="text" class="cell" value="${cell}" placeholder="填写用户电话号码" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">电子邮箱</div>
+                <div class="box">
+                    <input type="text" class="email" value="${email}" placeholder="填写用户电子邮箱" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">登录密码</div>
+                <div class="box">
+                    <form style="width:100%">
+                        <input type="password" class="password" value="${password}" placeholder="填写用户登录密码 -必填" />
+                    </form>
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">确认密码</div>
+                <div class="box">
+                    <form style="width:100%">
+                        <input type="password" class="confirm-password" value="${password}" placeholder="重复填写用户登录密码进行确认 -必填" />
+                    </form>
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">描述</div>
+                <div class="box">
+                    <textarea class="description" placeholder="填写用户描述" rows="5">${description}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@keyframes btn-hover {
+    from {
+        background-color: #34352C
+    }
+    to {
+        background-color: #f3a010
+    }
+}
+
+@keyframes item-hover {
+    from {
+        background-color: #F5F6EB;
+    }
+    to {
+        background-color: #f3a010
+    }
+}
+
+@keyframes hints {
+    0% {
+        opacity: 0;
+        filter: Alpha(opacity=0);
+    }
+    25% {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+    75% {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+    100% {
+        opacity: 0;
+        filter: Alpha(opacity=0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        filter: Alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+}
+
+@keyframes slide {
+    from {
+        margin-right: -100%;
+    }
+    to {
+        margin-right: 0;
+    }
+}

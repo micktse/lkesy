@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--include "head.inc"-->
+    <script src="js/column.js"></script>
+</head>
+
+<body style="display:none">
+    <div id="app" class="cms-column-edit-app">
+        <div class="header">
+            <div class="title">
+                <h1>栏目编辑</h1>
+                <h2></h2>
+            </div>
+            <div class="operate">
+                <div class="cms-column-edit-back btn">
+                    <i class="iconfont">&#xe632;</i>
+                    <span>返回</span>
+                </div>
+                <div class="cms-column-edit-save btn">
+                    <i class="iconfont">&#xe692;</i>
+                    <span>保存信息</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="line">
+                <div class="caption">所属栏目组</div>
+                <div class="box groups">
+                    <span class="group-name-text">${group_name}</span>
+                    <input type="hidden" class="group-id" value="${group_id}" />
+                    <input type="hidden" class="group-name" value="${group_name}" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">标识</div>
+                <div class="box">
+                    <input type="text" class="id" value="${id}" placeholder="系统自动生成" readonly/>
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">名称</div>
+                <div class="box">
+                    <input type="text" class="name not-null" value="${name}" placeholder="填写栏目名称 -必填" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">关键字</div>
+                <div class="box">
+                    <input type="text" class="keyword" value="${keyword}" placeholder="填写关键字信息" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">描述</div>
+                <div class="box">
+                    <textarea class="description" placeholder="填写描述信息" rows="5">${description}</textarea>
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">附图</div>
+                <div class="upload banner"></div>
+                <input type="hidden" class="img" value="${banner}" />
+            </div>
+            <div class="line">
+                <div class="caption">自定义信息</div>
+                <div class="box">
+                    <input type="text" class="customize" value="${customize}" placeholder="输入自定义信息项用半角,分隔" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

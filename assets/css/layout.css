@@ -1,0 +1,483 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    overflow: hidden;
+}
+
+div {
+    display: flex
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: inline-block;
+    overflow-y: auto;
+    height: 100%;
+    padding: 5px;
+}
+
+.header {
+    width: 100%;
+    align-items: center;
+    min-height: 50px;
+}
+
+.header h1 {
+    margin: 0 15px 0 15px;
+    font-size: 1.5em;
+}
+
+.header h2 {
+    font-size: 1.3em;
+}
+
+.header .title {
+    align-items: center;
+    width: 80%;
+}
+
+.header .title h1 {
+    min-width: 100px;
+}
+
+.header .search,
+.header .operate {
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.header .operate {
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.header .search .box {
+    border-radius: 5px;
+    width: 50%;
+    height: 20px;
+}
+
+.header .btn {
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    border-radius: 5px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.header .btn .iconfont {
+    margin-right: 5px;
+}
+
+.line {
+    padding: 10px 5px 10px 5px;
+}
+
+.cms-login-app {
+    height: 95%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.cms-login-op {
+    height: 38.2%;
+    width: 61.8%;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+.cms-login-op .left {
+    width: 45%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cms-login-op .left .icon-sureking_title {
+    font-size: 2em;
+}
+
+.cms-login-op .left .icon-cms {
+    font-size: 8em;
+}
+
+.cms-login-op .right {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cms-login-op .right .box {
+    width: 80%;
+    height: 15%;
+    border-radius: 5px;
+}
+
+.cms-login-op .right .box .iconfont {
+    font-size: 2em;
+    margin: 0 5% 0 2%;
+}
+
+.cms-login-btn {
+    margin-top: 2%;
+    height: 12%;
+    width: 70%;
+}
+
+.cms-login-footer {
+    height: 5%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.cms-main-tree {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cms-main-tree .icon-cms {
+    font-size: 5em;
+}
+
+.cms-main-menu {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cms-main-menu .btn {
+    width: 160px;
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    padding: 15px 0 15px 0;
+}
+
+.cms-main-menu .caption {
+    flex-direction: column;
+}
+
+.cms-main-menu .caption .en {
+    font-size: 6px;
+}
+
+.cms-main-menu .iconfont {
+    font-size: 1.5em;
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.cms-main-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.cms-columns-app,
+.cms-groups-app,
+.cms-article-app,
+.cms-column-edit-app,
+.cms-group-edit-app,
+.cms-group-select-app,
+.cms-column-select-app,
+.cms-articles-app,
+.cms-seo-app,
+.cms-users-app,
+.cms-user-app,
+.cms-dashboard-app,
+.cms-messages-app {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.cms-column-edit-app .groups,
+.cms-article-app .columns {
+    cursor: pointer;
+}
+
+.cms-column-edit-app .caption,
+.cms-group-edit-app .caption,
+.cms-article-app .caption,
+.cms-seo-app .caption,
+.cms-user-app .caption {
+    width: 25%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 15px 5px 0;
+}
+
+.cms-column-edit-app .box,
+.cms-column-edit-app .upload,
+.cms-group-edit-app .box,
+.cms-article-app .box,
+.cms-seo-app .box,
+.cms-user-app .box {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.cms-columns-list,
+.cms-groups-list,
+.cms-articles-list,
+.cms-users-list,
+.cms-messages-list {
+    flex-direction: column;
+    width: 96%;
+    padding: 15px 2% 15px 2%;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.cms-dashboard-list {
+    padding: 25px;
+    height: 100%;
+}
+
+.cms-dashboard-count {
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 25px 0;
+}
+
+.cms-dashboard-count div {
+    width: 20%;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.cms-dashboard-count h1 {
+    margin: 0;
+}
+
+.list-row {
+    width: 100%;
+    cursor: default;
+}
+
+.head-row div {
+    justify-content: center;
+}
+
+.list-row .iconfont {
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7 {
+    height: 30px;
+    align-items: center;
+    padding: 5px;
+}
+
+.cms-columns-list .col1 {
+    width: 25%;
+}
+
+.cms-columns-list .col2 {
+    width: 25%;
+    justify-content: center;
+}
+
+.cms-columns-list .col3 {
+    width: 10%;
+    justify-content: center;
+}
+
+.cms-columns-list .col4,
+.cms-columns-list .col5 {
+    width: 15%;
+    justify-content: center;
+}
+
+.cms-columns-list .col6 {
+    width: 10%;
+    justify-content: center;
+}
+
+.cms-groups-list .col1 {
+    width: 25%;
+}
+
+.cms-groups-list .col2 {
+    width: 30%;
+    justify-content: center;
+}
+
+.cms-groups-list .col3,
+.cms-groups-list .col4 {
+    width: 15%;
+    justify-content: center;
+}
+
+.cms-groups-list .col5,
+.cms-users-list .col4 {
+    width: 10%;
+    justify-content: center;
+}
+
+.cms-users-list .col1,
+.cms-users-list .col2,
+.cms-users-list .col3 {
+    width: 15%;
+    justify-content: center;
+}
+
+.cms-articles-list .col1 {
+    width: 25%;
+}
+
+.cms-articles-list .col2 {
+    width: 20%;
+    justify-content: center;
+}
+
+.cms-articles-list .col3 {
+    width: 8%;
+    justify-content: center;
+}
+
+.cms-articles-list .col4,
+.cms-articles-list .col5 {
+    width: 12%;
+    justify-content: center;
+}
+
+.cms-articles-list .col6 {
+    width: 5%;
+    justify-content: center;
+}
+
+.cms-articles-list .col7 {
+    width: 12%;
+    justify-content: center;
+}
+
+.cms-messages-list .head-row .col1,
+.cms-messages-list .head-row .col2 {
+    height: 30px;
+}
+
+.cms-messages-list .col1 {
+    width: 15%;
+    justify-content: center;
+    height: auto;
+}
+
+.cms-messages-list .col2 {
+    width: 70%;
+    height: auto;
+}
+
+.cms-messages-list .col2 .content {
+    flex-direction: column;
+}
+
+.cms-messages-list .col2 .content .line {
+    border: none;
+}
+
+.cms-messages-list .col2 .content .caption {
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.cms-column-select-app {
+    display: block;
+    overflow-y: auto;
+}
+
+.cms-column-select-app .all {
+    cursor: pointer;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.cms-group-select-app .list,
+.cms-column-select-app .list {
+    flex-direction: column;
+    width: 100%;
+}
+
+.cms-group-select-app i,
+.cms-column-select-app i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.cms-group-select-app b,
+.cms-column-select-app b {
+    cursor: pointer;
+}
+
+.cms-column-select-app .list {
+    padding-left: 15px;
+    width: auto;
+}
+
+.cms-group-select-app h1,
+.cms-column-select-app h1 {
+    font-size: 1.5em;
+    margin: 15px 0 20px 15px;
+}
+
+.cms-group-select-app .list div {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+}
+
+.cms-column-select-app ul,
+.cms-column-select-app li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    cursor: default;
+}
+
+.cms-column-select-app .item {
+    padding: 5px;
+}
+
+.cms-column-select-app .item span {
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+}

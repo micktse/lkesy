@@ -1,0 +1,157 @@
+body {
+    color: #34352C;
+}
+
+.box {
+    background-color: #FFF;
+    border-color: #34352C;
+}
+
+.hints {
+    background-color: #222;
+    color: #fff;
+}
+
+.confirm-message,
+.confirm-btns,
+.pop-window {
+    background-color: #F5F6EB;
+}
+
+.confirm-caption {
+    background-color: #34352C;
+    color: #F5F6EB;
+}
+
+.confirm-btns button {
+    background-color: #34352C;
+    color: #FFF;
+}
+
+.confirm-btns button:hover {
+    background-color: #f3a010;
+}
+
+.line {
+    border-bottom: 1px dotted #C9CABB;
+}
+
+.header {
+    background-color: #EFF0DC;
+}
+
+.header h1 {
+    color: #34352C;
+}
+
+.header h2 {
+    color: #63664b
+}
+
+.list-row {
+    background-color: #FFF;
+    border-bottom: 1px dotted #C9CABB;
+}
+
+.list-row:hover {
+    background-color: #f3a010;
+    color: #fff;
+    animation: item-hover .2s;
+}
+
+.head-row {
+    background-color: #C9CABB;
+}
+
+.head-row:hover {
+    background-color: #C9CABB;
+    color: #34352C;
+    animation: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1185864 */
+    src: url('//at.alicdn.com/t/font_1185864_rfmjaebpear.eot');
+    src: url('//at.alicdn.com/t/font_1185864_rfmjaebpear.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1185864_rfmjaebpear.woff2') format('woff2'), url('//at.alicdn.com/t/font_1185864_rfmjaebpear.woff') format('woff'), url('//at.alicdn.com/t/font_1185864_rfmjaebpear.ttf') format('truetype'), url('//at.alicdn.com/t/font_1185864_rfmjaebpear.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: default;
+}
+
+.cms-login-app,
+.cms-login-footer {
+    color: #F5F6EB;
+    background-color: #34352C;
+}
+
+.cms-login-op {
+    background-color: #F5F6EB;
+    color: #34352C;
+}
+
+.cms-login-btn {
+    color: #F5F6EB;
+    background-color: #34352C;
+    cursor: pointer;
+}
+
+.cms-login-btn:hover {
+    background-color: #f3a010;
+}
+
+.cms-main-tree {
+    color: #F5F6EB;
+    background-color: #34352C;
+}
+
+.cms-columns-app,
+.cms-groups-app,
+.cms-articles-app,
+.cms-users-app,
+.cms-messages-app {
+    background-color: #F5F6EB;
+}
+
+.btn {
+    color: #FFF;
+    background-color: #34352C;
+}
+
+.btn:hover {
+    animation: btn-hover .2s;
+    background-color: #f3a010;
+    color: #fff;
+}
+
+.cms-column-edit-app,
+.cms-group-edit-app,
+.cms-article-app,
+.cms-seo-app,
+.cms-user-app,
+.cms-dashboard-app {
+    background-color: #F5F6EB;
+}
+
+.cms-group-select-app .list div:hover,
+.cms-column-select-app .item span:hover {
+    background-color: #f3a010;
+    color: #fff;
+    animation: item-hover .2s;
+}
+
+.cms-column-select-app i {
+    color: #f3a010;
+}
+
+.cms-dashboard-count div {
+    color: #34352C;
+    background-color: #C9CABB;
+}

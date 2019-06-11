@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--include "head.inc"-->
+    <script src="js/articles.js"></script>
+</head>
+
+<body style="display:none">
+    <div id="app" class="cms-articles-app">
+        <div class="header">
+            <div class="title">
+                <h1>历史文案</h1>
+                <h2>所有文案</h2>
+            </div>
+            <div class="search">
+                <div class="box">
+                    <input type="text" class="query" placeholder="通过文案标题过滤" />
+                    <input type="hidden" class="column" />
+                    <i class="iconfont search-btn">&#xe631;</i>
+                </div>
+                <div class="cms-column btn">
+                    <i class="iconfont">&#xe625;</i>
+                    <span>筛选栏目</span>
+                </div>
+                <div class="cms-new btn">
+                    <i class="iconfont">&#xe60b;</i>
+                    <span>新建文案</span>
+                </div>
+            </div>
+        </div>
+        <div class="cms-articles-list"></div>
+    </div>
+</body>
+
+</html>

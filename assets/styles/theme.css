@@ -1,0 +1,24 @@
+.default-color {
+    color: #366ad3;
+}
+
+.main-bg {
+    background-color: #366ad3;
+}
+
+.sec-color {
+    color: #666;
+}
+
+.sec-bg {
+    background-color: #666;
+}
+
+.main-color {
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+<script>
+    var groups = eval('${groups}')
+    for (var i = 0; i < groups.length; i++) {
+        $('.cms-group-select-app .list')
+            .append($('<div>')
+                .attr('data-id', groups[i].id)
+                .attr('data-name', groups[i].name)
+                .html(groups[i].name)
+                .click(function() {
+                    Toolkit.closePop()
+                    groupSelected({
+                        id: $(this).attr('data-id'),
+                        name: $(this).attr('data-name')
+                    })
+                }))
+    }
+    $('.cms-group-select-app .all').click(function() {
+        Toolkit.closePop()
+        groupSelected({
+            id: '',
+            name: '所有栏目'
+        })
+    })
+</script>
+<div class="cms-group-select-app">
+    <h1>选择栏目组</h1>
+    <div class="list">
+        <div class="all">显示所有栏目</div>
+    </div>
+</div>

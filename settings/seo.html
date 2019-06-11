@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--include "head.inc"-->
+    <script src="js/seo.js"></script>
+</head>
+
+<body>
+    <div id="app" class="cms-seo-app">
+        <div class="header">
+            <div class="title">
+                <h1>搜索引擎优化</h1>
+                <h2></h2>
+            </div>
+            <div class="operate">
+                <div class="cms-back btn">
+                    <i class="iconfont">&#xe632;</i>
+                    <span>返回</span>
+                </div>
+                <div class="cms-save btn">
+                    <i class="iconfont">&#xe692;</i>
+                    <span>保存信息</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="line">
+                <div class="caption">关键字</div>
+                <div class="box">
+                    <input type="text" class="keyword" value="${keyword}" placeholder="填写文案关键字 -必填" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="caption">描述</div>
+                <div class="box">
+                    <textarea class="description" placeholder="填写文案描述 -必填" rows="15">${description}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<script>
+    var groups = eval('${groups}')
+    for (var i = 0; i < groups.length; i++) {
+        var li = $('<li>').append($('<i>').attr('class', 'iconfont').html('&#xe8f6;')).attr('data-id', groups[i].id).click(function() {
+                if ($('#' + $(this).attr('data-id')).is(":hidden")) {
+                    $(this).children('i').html('&#xe8f7;')
+                    $('#' + $(this).attr('data-id')).show()
+                } else {
+                    $(this).children('i').html('&#xe8f6;')
+                    $('#' + $(this).attr('data-id')).hide()
+                }
+            })
+            .append($('<b>')
+                .html(groups[i].name))
+        var ul = $('<ul>').attr('id', groups[i].id).hide()
+        for (j = 0; j < groups[i].columns.length; j++) {
+            ul.append($('<li>').attr('class', 'item').attr('data-id', groups[i].columns[j].id)
+                .attr('data-name', groups[i].columns[j].name)
+                .append($('<span>')
+                    .html(groups[i].columns[j].name)).click(function() {
+                    Toolkit.closePop()
+                    columnSelected({
+                        id: $(this).attr('data-id'),
+                        name: $(this).attr('data-name')
+                    })
+                }))
+        }
+        $('.cms-column-select-app .list').append($('<ul>').append(li.append(ul)))
+
+    }
+    $('.cms-column-select-app .all').click(function() {
+        Toolkit.closePop()
+        columnSelected({
+            id: '',
+            name: '所有文案'
+        })
+    })
+</script>
+<div class="cms-column-select-app">
+    <h1>选择栏目</h1>
+    <div class="all">显示所有文案</div>
+    <div class="list"></div>
+</div>
