@@ -2,16 +2,20 @@
     color: #366ad3;
 }
 
+.default-bg {
+    background-color: #FFF;
+}
+
 .main-bg {
     background-color: #366ad3;
 }
 
 .sec-color {
-    color: #666;
+    color: #333;
 }
 
 .sec-bg {
-    background-color: #666;
+    background-color: #999;
 }
 
 .main-color {
@@ -19,6 +23,10 @@
 }
 
 a {
-    color: #FFF;
     text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #366ad3;
+    color: #FFF;
 }

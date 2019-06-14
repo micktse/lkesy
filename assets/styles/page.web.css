@@ -1,0 +1,91 @@
+.web-banner {
+    background-image: url('/images/web_banner.jpg');
+    position: relative;
+    background-size: 100%;
+    padding-top: 40%
+}
+
+.web-banner div {
+    position: absolute;
+    bottom: 15%;
+    font-size: 14px;
+    right: 5%;
+    border-radius: 50px;
+    padding: 10px 100px 10px 100px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.list {
+    flex-direction: column;
+}
+
+.list .list-caption {
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    align-items: center;
+}
+
+.list .ban-line {
+    width: 30%;
+    height: 5px;
+    transform: skewX(-45deg);
+    margin: 20px;
+}
+
+.list .sec-color {
+    justify-content: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.funcs {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.func {
+    width: 80%;
+}
+
+.func .desc {
+    position: relative;
+    width: 61.8%;
+}
+
+.func .desc .layout {
+    position: absolute;
+    top: 10%;
+    margin-left: 10%;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.func .desc .layout ul {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.func .desc .layout ul li {
+    font-size: 20px;
+    margin: 5px 0 5px 0;
+    width: 50%;
+}
+
+.func .desc .layout div {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.func-1 .pic {
+    background-image: url('/images/web_func_1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 30%;
+    width: 38.2%;
+}

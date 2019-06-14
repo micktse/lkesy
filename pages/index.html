@@ -3,14 +3,64 @@
 
 <head>
     <meta charset="utf-8">
-    <!--include "header.inc"-->
+    <!--include "head.inc"-->
     <link href="styles/page.index.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/page.index.js"></script>
 </head>
 
 <body>
     <div id="app">
-        <!--include "banner.inc"-->
-        <div></div>
+        <!--include "header.inc"-->
+        <div class="carousel">
+            <div class="owl-carousel">
+                <div><img src="/images/home_banner_1.jpg" /></div>
+                <div><img src="/images/home_banner_2.jpg" /></div>
+                <div><img src="/images/home_banner_3.jpg" /></div>
+            </div>
+            <div class="dots">
+                <div class="dots-border">
+                    <div id="dot1" class="selected"></div>
+                    <div id="dot2" class="dot"></div>
+                    <div id="dot3" class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="func">
+            <div class="func-item func-1">
+                <div class="func-desc">
+                    <div class="caption default-color">一键报价</div>
+                    <div class="desc sec-color">
+                        &nbsp;&nbsp;&nbsp;&nbsp;完成车辆信息的填写后，并勾选所需要的险种，点击您所需要了解的保险公司报价，多家公司一键报价，在线即可了解车辆保险费用，再也不需要一个个的去“货比三家”。
+                    </div>
+                </div>
+            </div>
+            <div class="func-item func-2">
+                <div class="func-desc">
+                    <div class="caption default-color">一键预约</div>
+                    <div class="desc sec-color">
+                        &nbsp;&nbsp;&nbsp;&nbsp;提供多家的专业维修服务点，只需要点解预约，车辆资料同时发送到该服务点即可完成车辆维修预约，并且还能了解到车辆所需的维修工期。
+                    </div>
+                </div>
+            </div>
+            <div class="func-item func-3">
+                <div class="func-desc">
+                    <div class="caption main-color">数据分析</div>
+                    <div class="desc main-color">
+                        &nbsp;&nbsp;&nbsp;&nbsp;强大数据统计分析模块，是你的分析工具， 多个数据板块，饼图、折线图以及柱形图的图标分析，为决策提供有效数据来源。
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+                <div class="order-caption default-color">
+                    <div class="ban-line sec-bg"></div>
+                    <div>极速上手</div>
+                    <div class="ban-line sec-bg"></div>
+                </div>
+                <div class="sec-color">FASTER AND EASIER</div>
+                <div class="order-speed"></div>
+            </div>
+        </div>
+        <!--include "footer.inc"-->
     </div>
 </body>
 

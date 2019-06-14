@@ -7,3 +7,152 @@ html {
 div {
     display: flex;
 }
+
+#app {
+    flex-direction: column;
+}
+
+#app .banner {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+#app .banner .logo {
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    align-items: center;
+    z-index: 51;
+}
+
+#app .banner .logo .en {
+    font-size: 18px;
+}
+
+#app .banner .logo .cn {
+    margin-top: 15px;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+#app .banner .slogan {
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    font-size: 30px;
+}
+
+#app .banner .menu {
+    width: 100%;
+    padding-right: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#app .banner .menu a {
+    padding: 0 30px 0 30px;
+    height: 100%;
+    line-height: 80px;
+    font-size: 14px;
+}
+
+.footer {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer .footer-menu {
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.footer .footer-menu .footer-menu-top {
+    flex-direction: column;
+    padding: 20px 5px 20px 5px;
+    border-bottom: 1px solid #FFF;
+}
+
+.footer .footer-menu .footer-menu-top div {
+    padding: 5px 0 5px 0;
+}
+
+.footer .footer-menu .footer-menu-bottom {
+    justify-content: center;
+}
+
+.footer .footer-menu .footer-menu-bottom .col {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer .footer-menu .footer-menu-bottom .col div {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 55%;
+    align-items: flex-end;
+}
+
+.footer-logo .logo {
+    flex-direction: column;
+    padding-right: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo .logo .en {
+    font-size: 20px;
+}
+
+.footer-logo .logo .cn {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.footer-logo .qrcode {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+}
+
+.footer-logo .qrcode i {
+    font-size: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-ipc {
+    flex-direction: column;
+}
+
+.footer-ipc div {
+    padding: 5px;
+}
+
+.footer-ipc a {
+    margin: 0 5px 0 5px;
+}
+
+.owl-carousel {
+    width: 100%;
+}
+
+.owl-carousel img {
+    height: 100%;
+    z-index: 0;
+}
